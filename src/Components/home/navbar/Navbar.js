@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import {  } from 'react-router-dom';
 
 
 const Navbar = () => {

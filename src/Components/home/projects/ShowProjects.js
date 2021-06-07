@@ -3,7 +3,6 @@ import { AiOutlineClose, AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import Modal from 'react-modal';
 import Fade from 'react-reveal/Fade';
-import Flash from 'react-reveal/Flash';
 
 const customStyles = {
     content: {
