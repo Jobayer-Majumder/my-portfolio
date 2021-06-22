@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineClose, AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import Modal from 'react-modal';
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const customStyles = {
     content: {
@@ -35,12 +35,12 @@ const ShowProjects = ({ project }) => {
         <>
             <div className="col-md-12 mb-4">
                 <div className="row row-cols-md-2">
-                    <Fade bottom cascade>
+                    <Zoom>
                         <div className="col-md-6 mb-3">
                             <img src={img} alt="" className='img-fluid rounded' />
                         </div>
-                    </Fade>
-                    <Fade bottom cascade>
+                    </Zoom>
+                    <Zoom>
                         <div className="col-md-6 bg-dark text-white rounded p-4">
                             <h5 className='text-brand-lite'>{name}</h5>
                             <small className='text-secondary d-block'>{desc}</small>
@@ -48,7 +48,7 @@ const ShowProjects = ({ project }) => {
                             <a href={liveLink} className='fs-2 text-brand' target='_blank' rel="noreferrer"><HiOutlineExternalLink /></a>
                             <button onClick={openModal} className="btn btn-brand text-secondary d-block mt-3">Show Details</button>
                         </div>
-                    </Fade>
+                    </Zoom>
                 </div>
                 <Modal
                     isOpen={modalIsOpen}

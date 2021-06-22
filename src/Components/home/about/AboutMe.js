@@ -2,7 +2,7 @@ import React from 'react';
 import profile from '../../../images/profile.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
 const AboutMe = () => {
@@ -11,12 +11,12 @@ const AboutMe = () => {
             <div className="container pt-5 pb-5">
                 <h1 className="text-secondary mb-5 text-center">About Me</h1>
                 <div className="row row-cols-md-2">
-                    <Fade bottom cascade>
+                    <Zoom>
                         <div className="col-md-6 mb-4 text-center">
                             <img src={profile} alt="" className="img-fluid rounded-circle" style={{ background: '#f3d92c', width: '70%' }} />
                         </div>
-                    </Fade>
-                    <Fade bottom cascade>
+                    </Zoom>
+                    <Zoom>
                         <div className="col-md-6 shadow-lg p-4 rounded m-auto">
                             <h2 className='text-brand-lite'>Jobayer Majumder</h2>
                             <p className="text-secondary">
@@ -41,7 +41,7 @@ const AboutMe = () => {
                                 <button className="btn btn-brand text-secondary d-block mt-4">GET IN TOUCH</button>
                             </Link>
                         </div>
-                    </Fade>
+                    </Zoom>
                 </div>
             </div>
         </section>
