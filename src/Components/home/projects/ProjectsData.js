@@ -13,11 +13,11 @@ const projectData = [
     },
     {
         name: 'Red Onion Restaurant',
-        desc: 'A Single page web app with dashboard where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.',
+        desc: 'This is a single page food seller web application. The user can select his favorite foods and checkout with shipment information. There actually implemented state management system with redux.',
         img: redOnion,
         liveLink: 'https://naughty-nightingale-ebc39e.netlify.app/',
         gitLink: 'https://github.com/Jobayer-Majumder/red-onion',
-        techUsed: ['JavaScript', 'ES6', 'React.js', 'React Router', 'Node.js', 'Express.js', 'MongoDB', 'Firebase Authentication', 'Bootstrap']
+        techUsed: ['JavaScript', 'ES6', 'React.js', 'React Router', 'Redux', 'Tailwind']
     },
     {
         name: 'Go Shop eCommerce',

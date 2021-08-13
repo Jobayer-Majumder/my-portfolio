@@ -25,7 +25,7 @@ const skillsData = [
     },
     {
         title: 'Redux',
-        skill: '50%'
+        skill: '75%'
     },
     {
         title: 'MongoDB',
@@ -34,6 +34,14 @@ const skillsData = [
     {
         title: 'HTML5/CSS3',
         skill: '90%'
+    },
+    {
+        title: 'Tailwind',
+        skill: '90%',
+    },
+    {
+        title: 'Sass',
+        skill: '90%',
     },
     {
         title: 'Bootstrap',

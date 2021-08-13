@@ -8,7 +8,7 @@ import Zoom from 'react-reveal/Zoom';
 const AboutMe = () => {
     return (
         <section id='about' className='bg-dark'>
-            <div className="container pt-5 pb-5">
+            <div className="container pt-5">
                 <h1 className="text-secondary mb-5 text-center">About Me</h1>
                 <div className="row row-cols-md-2">
                     <Zoom>
@@ -20,8 +20,8 @@ const AboutMe = () => {
                         <div className="col-md-6 shadow-lg p-4 rounded m-auto">
                             <h2 className='text-brand-lite'>Jobayer Majumder</h2>
                             <p className="text-secondary">
-                                i am an enthusiastic JavaScript developer with knowing some framework for the front-end and the backend. I have a lot of interest in data structures and Algorithms.
-                        </p>
+                            I'm An enthusiastic JavaScript developer with knowing some framework for the front-end and the backend. I have a lot of interest in data structures and Algorithms , I try to update myself with the latest technology and try to keep myself ready to take on challenges in any situation.
+                            </p>
                             <a href="https://www.linkedin.com/in/jobayer-majumder-44727a203/" target='_blank' rel="noreferrer">
                                 <span className='fs-2 me-3 text-brand'><FaLinkedin /></span>
                             </a>

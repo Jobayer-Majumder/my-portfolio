@@ -9,12 +9,12 @@ import { GiSwordBrandish } from 'react-icons/gi';
 const serviceData = [
     {
         title: 'Web Design',
-        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, temporibus. Nihil, libero aperiam. At, itaque!',
+        desc: 'Are you looking to lunch your redesigned or brand-new website fast, I offer you rapid web design services.',
         icon: <AiOutlineAntDesign />
     },
     {
         title: 'Web Development',
-        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, temporibus. Nihil, libero aperiam. At, itaque!',
+        desc: 'Do you want to take your business to its next stage of success? this is the right choice for you.',
         icon: <MdDeveloperMode />
     },
     {

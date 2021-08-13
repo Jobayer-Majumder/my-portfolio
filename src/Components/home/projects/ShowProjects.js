@@ -1,79 +1,37 @@
 import React from 'react';
-import { AiOutlineClose, AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import Modal from 'react-modal';
 import Zoom from 'react-reveal/Zoom';
 
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        borderRadius: '12px',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        background: '#212529'
-    }
-};
-
-Modal.setAppElement('#root')
 
 const ShowProjects = ({ project }) => {
     const { img, name, desc, liveLink, gitLink, techUsed } = project;
 
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    function openModal() {
-        setIsOpen(true);
-    };
-
-    function closeModal() {
-        setIsOpen(false);
-    };
+    
 
     return (
         <>
             <div className="col-md-12 mb-4">
                 <div className="row row-cols-md-2">
                     <Zoom>
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 mb-3 d-flex justify-content-center align-items-center">
                             <img src={img} alt="" className='img-fluid rounded' />
                         </div>
                     </Zoom>
                     <Zoom>
-                        <div className="col-md-6 bg-dark text-white rounded p-4">
+                        <div className="col-md-6 bg-dark text-white rounded pt-3 px-4">
                             <h5 className='text-brand-lite'>{name}</h5>
                             <small className='text-secondary d-block'>{desc}</small>
                             <a href={gitLink} className='fs-2 text-brand me-3' target='_blank' rel="noreferrer"><AiOutlineGithub /></a>
-                            <a href={liveLink} className='fs-2 text-brand' target='_blank' rel="noreferrer"><HiOutlineExternalLink /></a>
-                            <button onClick={openModal} className="btn btn-brand text-secondary d-block mt-3">Show Details</button>
-                        </div>
-                    </Zoom>
-                </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Example Modal"
-                >
-
-                    <button className='btn' onClick={closeModal}><AiOutlineClose className='text-brand fs-2' /></button>
-                    <div className="container p-4">
-                        <div className="row row-cols-md-2">
-                            <div className="col-md-6">
-                                <img src={img} alt="" className='img-fluid rounded' />
-                            </div>
-                            <div className="col-md-6 mt-4">
-                                <h5 className='text-brand-lite'>{name}</h5>
-                                <small className='text-secondary d-block mb-3'>{desc}</small>
-                                <h5 className='text-brand-lite'>Technology Used</h5>
+                            <a href={liveLink} className='fs-2 text-brand ' target='_blank' rel="noreferrer"><HiOutlineExternalLink /></a>
+                            <p className='pt-2'>
                                 {
                                     techUsed?.map((tech, index) => <span className="badge bg-secondary me-2 mb-2" key={index++}>{tech}</span>)
                                 }
-                            </div>
+                            </p>
                         </div>
-                    </div>
-                </Modal>
+                    </Zoom>
+                </div>
             </div>
         </>
     );

@@ -16,8 +16,8 @@ const AllProject = ({ project }) => {
                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                         <div className="card-footer border-0 d-flex justify-content-around">
-                            <a href={`${liveSite}`}>Live Site</a>
-                            <a href={`${sourceCode}`}>Source Code</a>
+                            <a href={`${liveSite}`}><button className='btn btn-brand text-brand'>Live Site</button></a>
+                            <a href={`${sourceCode}`}><button className='btn btn-brand text-brand'>Live Site</button></a>
                         </div>
                     </div>
                 </Zoom>
